@@ -2,13 +2,11 @@ import React from "react";
 import {
     View, Text, TextInput, StyleSheet,Alert,TouchableOpacity,
 } from 'react-native';
-import Appbar from "../components/Appbar";
 import Button from "../components/Button";
 
 export default function SignUpScreen() {
     return (
         <View style={styles.container}>
-            <Appbar />
 
             <View style={styles.inner}>
                 <Text style={styles.title}>Sign up</Text>
