@@ -4,7 +4,8 @@ import {
 } from 'react-native';
 import Button from "../components/Button";
 
-export default function LoginScreen() {
+export default function LoginScreen(props) {
+    const { navigation } = props;
     return (
         <View style={styles.container}>
 
@@ -12,10 +13,20 @@ export default function LoginScreen() {
                 <Text style={styles.title}>Log In</Text>
                 <TextInput style={styles.input} value='Email Adress' />
                 <TextInput style={styles.input} value='Password' />
-                <Button label="Submit" />
+                <Button label="Submit" onPress={() => {
+                    navigation.reset({
+                        index: 0,
+                        routes: [{ name: 'MemoList' }],
+                    });
+                }} />
                 <View style={styles.footer}>
                     <Text style={styles.footerText}>Not Registered?</Text>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => {
+                        navigation.reset({
+                            index: 0,
+                            routes: [{ name: 'SignUp' }],
+                        })
+                    }}>
                         <Text style={styles.footerLink}>Sign up here!</Text>
                     </TouchableOpacity>
                 </View>
