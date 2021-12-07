@@ -24,8 +24,8 @@ export default function App() {
           headerTintColor: '#ffffff',
           headerBackTitle: 'Back',
           cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
-          gestureEnabled:true,
-          gestureDirection:'horizontal',
+          gestureEnabled: true,
+          gestureDirection: 'horizontal',
 
         }}
       >
