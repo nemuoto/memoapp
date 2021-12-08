@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet,TouchableOpacity } from 'react-native';
 import { string, shape, func } from 'prop-types';
-import { AntDesign, Feather } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 
 
 export default function CircleButton(props) {

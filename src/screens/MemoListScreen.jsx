@@ -6,17 +6,20 @@ import LogOutButton from "../components/LogOutButton";
 
 export default function MemoListScreen(props) {
   const { navigation } = props;
+
   useEffect(()=>{
     navigation.setOptions({
       headerRight: () => <LogOutButton />,
     });
   },[])
 
+
   return (
     <View style={styles.container}>
+
       <MemoList />
       <CircleButton name="plus"
-        onPress={() => { navigation.navigate('MemoCreate'); }}
+        onPress={() => {navigation.navigate('MemoCreate'); }}
       />
     </View>
   );

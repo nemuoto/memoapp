@@ -11,7 +11,6 @@ export default function SignUpScreen(props) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-
     function handlePress() {
         firebase.auth().createUserWithEmailAndPassword(email, password)
         .then((userCredential)=>{

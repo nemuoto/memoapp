@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-    View, Text, TextInput, StyleSheet,
+    View, TextInput, StyleSheet,
 } from 'react-native';
 
 import firebase from "firebase";
