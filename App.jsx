@@ -59,3 +59,4 @@ export default function App() {
     </NavigationContainer>
   );
 }
+console.log('baka');
